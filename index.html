@@ -51,7 +51,7 @@
 <d-title>
     <h1>Spiking Neural Networks on Neuromorphic Processors</h1>
     <figure class="l-gutter">
-        <img src="img/ini.jpg" style="width:auto;height:220px;margin-bottom:-50px;margin-left:80px;margin-top:-75px;">
+        <img src="course/img/ini.jpg" style="width:auto;height:220px;margin-bottom:-50px;margin-left:80px;margin-top:-75px;">
     </figure>
 </d-title>
 <body>
@@ -72,14 +72,14 @@
     <p>The first thing to appreciate about neurons is their specialized morphology, i.e. their form and structure. It allows them to receive information from more than $10^4$ mostly neighbouring cell bodies and communicate rapidly over long distances, sometimes from the spinal cord to the feet (up to a meter!). In the mammalian cortex<d-footnote>The cerebral cortex is the 2-3 mm thick outermost layer of the human brain.</d-footnote>, the connectivity of neurons are so dense that several kilometers of 'wiring' can be found in a cubic milimeter.</p> A typical spiking neuron can be divided into three different compartments: dendrite (input), soma (processing unit) and axons (output).
 
     <figure class="l-body" style="width: 50%; margin-left: 180px;">
-        <img src="img/purkinje.png">
+        <img src="course/img/purkinje.png">
         <figcaption>Drawing of a Purkinje cell from cat's cerebellar cortex, by Santiago Ramon y Cajal <d-cite key="cajal1909"></d-cite>. Notice the complexity and number of dendrite branches.</figcaption>
     </figure>
 
     <p>Neurons receive signals from other neurons through synapses located – not exclusively – on their dendritic tree, which is a complex, branching, sprawling structure. If you are wondering what the king of dendritic complexity is, that would be the Purkinje cell, which may receive up to $10^5$ other connections. Dendrites are studded with dendritic spines – little bumps where other neurons make contact with the dendrite. Signals from the dendrites propagate to and converge at the soma – the cell’s body where nucleus and other typical cell organells live.</p>
 
     <figure class="l-body">
-        <img src="img/neural-anatomy.png">
+        <img src="course/img/neural-anatomy.png">
         <figcaption>Anatomy of a neuron.</figcaption>
     </figure>
 
@@ -162,17 +162,17 @@
     <p>One way to look at the computational powers of neurons is to look at their F-I functions — that is, their gain functions. Hodgkin proposed 3 classes of neurons<d-cite key="Hodgkin.1948"></d-cite> based on this metric, which are represented in the below figures:</p>
 
     <figure class="l-body">
-        <img src="img/fi1.svg"">
+        <img src="course/img/fi1.svg"">
         <figcaption>This is an example of a class 1 neuron’s F-I curve. Notice the curve is smooth. These neurons are able to generate arbitrarily low frequency spike trains.</figcaption>
     </figure>
 
     <figure class="l-body">
-        <img src="img/fi2.svg">
+        <img src="course/img/fi2.svg">
         <figcaption>  This is an example of a class 2 neuron. There is a discontinuous jump in firing rate. Type II neurons are not able to generate arbitrarily low frequency spike trains.</figcaption>
     </figure>
 
     <figure class="l-body">
-        <img src="img/fi3.svg">
+        <img src="course/img/fi3.svg">
         <figcaption>Class 3 neurons don’t have interesting F-I curves, since they fire only at the onset of an input. That is, they generate a single spike when given a constant input.</figcaption>
     </figure>
 
@@ -183,32 +183,32 @@
     <p>We can also consider whether neurons are either integrators or resonators. Integrators accumulate signals until their membrane potential reaches a well defined threshold. Closely timed signals are added together and have greater affect than when far apart. Integrators are coincidence detectors. Some integrators are Type 1 neurons.</p>
 
     <figure class="l-body">
-        <img src="img/in1.svg">
+        <img src="course/img/in1.svg">
     </figure>
 
     <figure class="l-body">
-        <img src="img/in2.svg">
+        <img src="course/img/in2.svg">
         <figcaption>This is an example of an integrator. The neuron integrates the constant input overtime.</figcaption>
     </figure>
 
     <figure class="l-body">
-        <img src="img/ndynamics.svg">
+        <img src="course/img/ndynamics.svg">
         <figcaption>Above is the phase portrait of a Simple Model. The vector field (black arrows) depict the trajectories throughout the state space, (2) the null clines (solid black lines) depict the points where a partial derivative is $0$, (3) the fixed point (black dot) where in this case all points evolve toward, and (4) the trajectory (red) showing a trajectory through the state space. Shown here is also a basin of attraction<d-footnote>The set of points in the space of system variables such that initial conditions chosen in this set dynamically evolve to a particular attractor.</d-footnote> (blue area) in which all points tend toward a stable node (black point). The separatrix<d-footnote>A separatrix marks a boundary between phase curves with different properties.</d-footnote> (solid blue line) leads directly into the saddle point<d-footnote>A point of a function or surface which is a stationary point but not an extremum.</d-footnote> (white point) and also defines the boundary of the basin of attraction.</figcaption>
     </figure>
 
     <p>Resonators resonate (oscillate) in response to incoming signals. Resonators do not necessarily have clearly defined thresholds. The threshold is fuzzy.  Unlike integrators, resonators are most sensitive to a narrow band of frequencies. Resonators are coincidence detectors as well, but they are also frequency detectors. All resonators are type 2 neurons.</p>
 
     <figure class="l-body">
-        <img src="img/res1.svg">
+        <img src="course/img/res1.svg">
     </figure>
 
     <figure class="l-body">
-        <img src="img/res2.svg">
+        <img src="course/img/res2.svg">
         <figcaption>Above, is an example of an integrator. We are able to make a resonator neuron spike with three very small amplitude pulses. Since these pulses are at the right resonant frequency and push the membrane potential higher and higher. This is similar to swinging your legs in the right rhythm on a swing.</figcaption>
     </figure>
 
     <figure class="l-body">
-        <img src="img/res3n.svg">
+        <img src="course/img/res3n.svg">
         <figcaption>Above figure shows another example of resonator model dynamics.</figcaption>
     </figure>
 
